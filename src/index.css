@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;800&display=swap');
+
+@theme {
+  --font-display: "Anton", sans-serif;
+  --font-sans: "Inter", sans-serif;
+  
+  --color-pepper-maroon: #711F25;
+  --color-pepper-black: #0A0A0A;
+  --color-pepper-red: #E31837;
+  --color-pepper-silver: #C0C0C0;
+  --color-pepper-cream: #F5F2ED;
+}
+
+@layer base {
+  body {
+    @apply bg-pepper-black text-pepper-cream font-sans antialiased overflow-x-hidden;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-display uppercase tracking-tight;
+  }
+}
+
+.fizz-bg {
+  background: radial-gradient(circle at 50% 50%, rgba(113, 31, 37, 0.2) 0%, transparent 70%);
+}
+
+.glass-card {
+  @apply bg-white/5 backdrop-blur-lg border border-white/10;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-linear-to-r from-pepper-red to-pepper-maroon;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-pepper-black;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-pepper-maroon rounded-full;
+}

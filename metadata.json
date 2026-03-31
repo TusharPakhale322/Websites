@@ -1,0 +1,5 @@
+{
+  "name": "Dr Pepper: The 23 Flavors Experience",
+  "description": "A high-converting, modern, mobile-first website for Dr Pepper, optimized for purchase intent and brand recall.",
+  "requestFramePermissions": ["geolocation"]
+}
